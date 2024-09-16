@@ -1,0 +1,22 @@
+<!-- auth-server/login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+<h2>Login</h2>
+<form method="POST" action="/login">
+    <label>Username:</label>
+    <input type="text" name="username" required><br>
+    <label>Password:</label>
+    <input type="password" name="password" required><br>
+    <label>Channel: </label>
+    <select name="channel" >
+        <option value="oauth2">OAuth2</option>
+        <option value="credential">Credential</option>
+    </select>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>
